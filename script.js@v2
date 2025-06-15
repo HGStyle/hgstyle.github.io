@@ -1,0 +1,14 @@
+window.addEventListener("load", function() {
+    var l = (new URLSearchParams(window.location.search)).get('lang');
+    document.querySelectorAll("a").forEach(function(e) {
+        if ((new URL(e.href).hostname) != window.location.hostname || e.parentElement.getAttribute('id') == 'nav-down') {
+            return
+        }
+        var h = e.getAttribute('href');
+        if (h.indexOf('?') !== -1) {
+            e.setAttribute('href', h + "&lang=" + l)
+        } else {
+            e.setAttribute('href', h + "?lang=" + l)
+        }
+    })
+}, false);

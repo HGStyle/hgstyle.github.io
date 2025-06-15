@@ -1,0 +1,10 @@
+
+@font-face {
+	font-family: 'aaargh regular';
+	src: url('woff/Aaargh Regular.woff') format('woff'),
+	     url('woff2/Aaargh Regular.woff2') format('woff2'),
+	     url('ttf/Aaargh Regular.ttf') format('ttf'),
+	     url('otf/Aaargh Regular.otf') format('otf'),
+	     url('svg/Aaargh Regular.svg') format('svg');
+}
+	
